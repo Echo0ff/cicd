@@ -22,7 +22,7 @@ jobs:
         pip install pytest
     - name: Test with pytest
       run: |
-        pytest
+        pytest -v tests/
 
   build-and-deploy:
     needs: test
